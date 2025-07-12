@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Toko Fashion Kita</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Toko Fashion Kita</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="produk1.html">Produk</a>
+      <a href="kontak.html">Kontak</a>
+    </nav>
+  </header>
+
+  <!-- Keranjang Belanja -->
+  <div id="keranjang">
+    🛒 <strong>Keranjang:</strong> 
+    <span id="jumlah-item">0</span> item | 
+    Total: <span id="total-harga">Rp 0</span>
+  </div>
+
+  <!-- Daftar Produk -->
+  <main>
+    <section class="product-list">
+      <h2>Produk Terbaru</h2>
+
+      <!-- Produk 1 -->
+      <div class="product">
+        <img src="images/produk1.jpeg" alt="one set casual wanita" />
+        <h3>one set casual wanita</h3>
+        <p>Rp 189.000</p>
+        <p>Terbuat dari bahan katun lembut dan denim ringan. Cocok untuk hangout, kampus, atau casual meeting. Tersedia ukuran M dan L.</p>
+        <button onclick="tambahKeKeranjang('one set casual wanita', 189000)">🛍️ Beli</button>
+      </div>
+
+      <!-- Produk 2 -->
+      <div class="product">
+        <img src="images/produk2.jpeg" alt="blouse kerah renda" />
+        <h3>blouse kerah renda</h3>
+        <p>Rp 145.000</p>
+        <p>Blouse lengan panjang dengan aksen kerah renda yang manis dan elegan.</p>
+        <button onclick="tambahKeKeranjang('blouse kerah renda', 145000)">🛍️ Beli</button>
+      </div>
+
+      <!-- Produk 3 -->
+      <div class="product">
+        <img src="images/produk3.jpeg" alt="sepatu kest wanita" />
+        <h3>sepatu kest wanita</h3>
+        <p>Rp 179.000</p>
+        <p>Ringan dan empuk untuk aktivitas harian. Desain kasual yang trendi, cocok untuk gaya streetwear dan santai.</p>
+        <button onclick="tambahKeKeranjang('sepatu kest wanita', 179000)">🛍️ Beli</button>
+      </div>
+
+      <!-- Produk 4 -->
+      <div class="product">
+        <img src="images/produk4.jpeg" alt="sneakers sovella wanita" />
+        <h3>sneakers sovella wanita</h3>
+        <p>Rp 210.000</p>
+        <p>Sepatu kets wanita premium tersedia dalam warna Khaki, Putih, Hitam, dan Beige.</p>
+        <button onclick="tambahKeKeranjang('sneakers sovella wanita', 210000)">🛍️ Beli</button>
+      </div>
+
+      <!-- Produk 5 -->
+      <div class="product">
+        <img src="images/produk5.jpeg" alt="slin bag MOSSDOOM" />
+        <h3>slin bag MOSSDOOM</h3>
+        <p>Rp 165.000</p>
+        <p>Tas bahu wanita dengan desain minimalis elegan warna baby blue.</p>
+        <button onclick="tambahKeKeranjang('slin bag MOSSDOOM', 165000)">🛍️ Beli</button>
+      </div>
+
+      <!-- Produk 6 -->
+      <div class="product">
+        <img src="images/produk6.jpeg" alt="handbag kecil KAFINA " />
+        <h3>handbag kecil KAFINA</h3>
+        <p>Rp 199.000</p>
+        <p>handbag kecil wanita bertekstur crocodile dengan nuansa elegan.</p>
+        <button onclick="tambahKeKeranjang('handbag kecil KAFINA', 199000)">🛍️ Beli</button>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Kontak kami: fashionkita@gmail.com | 0812-3456-7890</p>
+  </footer>
+
+</body>
+</html>
