@@ -1,0 +1,150 @@
+/* ====== GAYA UMUM ====== */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff5f7;
+  color: #333;
+}
+
+/* ====== HEADER ====== */
+header {
+  background-color: #ffb6c1;
+  color: #fff;
+  padding: 20px 10px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffe6ec;
+}
+
+/* Tombol Umum Pink (digunakan juga untuk tombol Kirim) */
+.button-pink {
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.button-pink:hover {
+  background-color: #e5539e;
+}
+
+/* ====== KERANJANG ====== */
+#keranjang {
+  background-color: #fff0f5;
+  padding: 10px 20px;
+  text-align: right;
+  font-size: 14px;
+  border-bottom: 1px solid #f7c8d4;
+}
+
+/* ====== PRODUK LIST ====== */
+.product-list {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* ====== KARTU PRODUK ====== */
+.product {
+  background-color: #ffffff;
+  width: 200px;
+  height: 420px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(255, 192, 203, 0.3);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.product:hover {
+  transform: scale(1.03);
+}
+
+.product img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.product h3 {
+  margin: 10px 0 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.product p {
+  font-size: 14px;
+  margin: 5px 0;
+  color: #555;
+}
+
+.product button {
+  margin-top: auto;
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.product button:hover {
+  background-color: #e5539e;
+}
+
+/* ====== FOOTER ====== */
+footer {
+  background-color: #fce4ec;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* ====== RESPONSIF ====== */
+@media (max-width: 600px) {
+  .product-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product {
+    width: 80%;
+    height: auto;
+  }
+}
